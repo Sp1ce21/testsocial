@@ -1,0 +1,45 @@
+.channels {
+}
+.button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.text {
+    margin: 0 11px;
+    line-height: 17px;
+    color: #b5b5b5;
+}
+.channelsRow {
+    padding: 14px 0;
+}
+.channelsRow {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #919191;
+
+    display: flex;
+    justify-content: space-between;
+}
+.channel:before {
+    content: "# ";
+}
+.channelsList {
+    display: flex;
+    flex-direction: column;
+}
+.channel {
+    font-weight: bold;
+    line-height: 17px;
+    color: #ffffff;
+    padding: 6px 13px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.channel:hover {
+    background: #ffffff44;
+}
+
+
