@@ -1,8 +1,8 @@
 import s from './Channels.module.css';
 import messages from '../../../../assets/images/FriendsMenu/messages.png';
-import {NavLinkCrator} from '../../../../common/NavLinkCreator';
+import NavLinkCreator from '../../../../common/NavLinkCreator';
  
-function Channels() {
+function Channels(props) {
     return (
         <div className={s.channels}>
 
@@ -11,23 +11,13 @@ function Channels() {
                 <div className={s.text}>All treads</div>
             </div>
 
-            <div className={s.channelsRow}>
+            <div className='row'>
                 <div className={s.channelsTitle}>Channels</div>
-                <div className={s.numbers}>{/* props... */}11</div>
+                <div className={s.numbers}>{props.channels.length}</div>
             </div>
 
             <div className={s.channelsList}>
-                {NavLinkCrator('/', 'general')}
-                {NavLinkCrator('/', 'support')}
-                {NavLinkCrator('/', 'general')}
-                {NavLinkCrator('/', 'general')}
-                {NavLinkCrator('/', 'general')}
-                {NavLinkCrator('/', 'general')}
-                {NavLinkCrator('/', 'general')}
-                {NavLinkCrator('/', 'general')}
-                {NavLinkCrator('/', 'general')}
-                {NavLinkCrator('/', 'general')}
-                {NavLinkCrator('/', 'general')}
+                {props.channels.map( u => <NavLinkCreator adress={u.link} text={u.text} />)}
             </div>
 
         </div>

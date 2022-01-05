@@ -1,0 +1,28 @@
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+.offline {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #a3a2a2;
+}
+.online{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #70CC16;
+}
+.image {
+    width: 32px;
+    height: 32px;
+    border-radius: 3px;
+    margin: 0 13px 0 7px;
+}
+.text {
+    line-height: 17px;
+    color: #b5b5b5;
+}

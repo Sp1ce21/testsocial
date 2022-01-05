@@ -1,7 +1,8 @@
 import s from './NomadList.module.css';
 import arrow from '../../../assets/images/FriendsMenu/arrow.png'
 import settings from '../../../assets/images/FriendsMenu/settings.png'
-import Channels from './Channels/Channels';
+import ChannelsContainer from './Channels/ChannelsContainer';
+import FriendsContainer from './Friends/FriendsContainer';
 
 function NomadList() {
     return (
@@ -15,7 +16,9 @@ function NomadList() {
                 <img src={settings} alt="settings" className={s.settings}/>
             </div>
 
-            <Channels/>
+            <ChannelsContainer/>
+
+            <FriendsContainer/>
 
         </div>
     );
