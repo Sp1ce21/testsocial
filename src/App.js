@@ -1,11 +1,10 @@
 import './App.css';
 import {
     BrowserRouter as Router,
-    Switch,
-    Route,
 } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
 import FriendsMenu from './components/FriendsMenu/FriendsMenu';
+import ChatContainer from './components/Chat/ChatContainer';
 
 function App() {
     return (
@@ -13,6 +12,7 @@ function App() {
                 <div className="appWrapper">
                     <Navbar />
                     <FriendsMenu />
+                    <ChatContainer/>
                 </div>
         </Router>
     );

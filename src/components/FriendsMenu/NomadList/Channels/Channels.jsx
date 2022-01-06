@@ -17,7 +17,7 @@ function Channels(props) {
             </div>
 
             <div className={s.channelsList}>
-                {props.channels.map( u => <NavLinkCreator adress={u.link} text={u.text} />)}
+                {props.channels.map( u => <NavLinkCreator adress={u.link} text={u.text} setCurrentLink={props.setCurrentLink}/>)}
             </div>
 
         </div>
