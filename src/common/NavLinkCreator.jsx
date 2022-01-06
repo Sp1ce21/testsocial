@@ -6,7 +6,7 @@ const NavLinkCreator = ({adress, text, setCurrentLink, ...props}) => {
     function callLink(){
         setCurrentLink(adress);
     }
-debugger
+    
     return (
         <NavLink className={s.channel} to={`/channels/${adress}`} activeClassName={s.channelActive} onClick={callLink}>{text}</NavLink>
     )

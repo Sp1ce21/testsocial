@@ -1,6 +1,7 @@
 import Chat from "../components/Chat/Chat";
 import {
     Route,
+    Redirect,
 } from "react-router-dom";
 
 function lastNameCreator(name) {
@@ -9,8 +10,9 @@ function lastNameCreator(name) {
 }
 
 function ChatPageCreator(props) {
+    console.log(window.location.pathname === '/')
     return (
-        <Route path={window.location.pathname} render={() => <Chat channelsLink={lastNameCreator(window.location.pathname)} />} />
+        window.location.pathname !== '/' ? <Route path={window.location.pathname} render={() => <Chat channelsLink={lastNameCreator(window.location.pathname)} />} /> : <Redirect to="/channels/global" />
     );
 }
 

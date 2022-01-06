@@ -1,9 +1,10 @@
 import s from './Chat.module.css';
+import ChatHeader from './ChatHeader/ChatHeader';
 
 function Chat(props) {
     return (
         <div className={s.chatPage}>
-            {props.channelsLink}
+            <ChatHeader channelsLink={props.channelsLink}/>
         </div>
     );
 }
