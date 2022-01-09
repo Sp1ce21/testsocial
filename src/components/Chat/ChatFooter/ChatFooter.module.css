@@ -1,0 +1,26 @@
+.line {
+    background: #000000;
+    opacity: 0.24;
+}
+.row {
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text {
+    line-height: 17px;
+    color: #8d8d8d;
+    border: none;
+    outline: none;
+}
+.leftPart img {
+    margin-right: 20px;
+}
+.leftPart {
+    display: flex;
+    align-items: center;
+}
+img {
+    cursor: pointer;
+}

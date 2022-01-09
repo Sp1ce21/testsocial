@@ -10,7 +10,6 @@ function lastNameCreator(name) {
 }
 
 function ChatPageCreator(props) {
-    console.log(window.location.pathname === '/')
     return (
         window.location.pathname !== '/' ? <Route path={window.location.pathname} render={() => <Chat channelsLink={lastNameCreator(window.location.pathname)} />} /> : <Redirect to="/channels/global" />
     );
