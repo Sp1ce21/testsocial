@@ -1,5 +1,7 @@
 .main {
     padding: 20px;
+    max-height: 75vh;
+    overflow-y: scroll;
 }
 .row {
     display: flex;
@@ -9,6 +11,7 @@
     margin-right: 12px;
     border-radius: 4px;
     align-self: flex-start;
+    
 }
 .name {
     font-weight: bold;
@@ -29,6 +32,7 @@
 }
 .block {
     padding: 5px 0;
+    margin-bottom: 10px;
 }
 .block:first-child {
     padding-top: 0;
@@ -58,4 +62,21 @@
     font-size: 13px;
     line-height: 18px;
     color: #3577ef;
+}
+.container {
+    position: relative;
+    width: 267px;
+    height: 201px;
+    /* padding: 10px 0; */
+}
+.position {
+    position: absolute;
+    right: -23px;
+    bottom: -14px;
+}
+.content {
+    background: #ffffff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.14);
+    padding: 4px 12px 3px 6px;
+    border-radius: 4px;
 }

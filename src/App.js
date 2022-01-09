@@ -5,6 +5,7 @@ import {
 import Navbar from './components/Navbar/Navbar';
 import FriendsMenu from './components/FriendsMenu/FriendsMenu';
 import ChatContainer from './components/Chat/ChatContainer';
+import ProfileContainer from './components/Profile/ProfileContainer';
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                     <Navbar />
                     <FriendsMenu />
                     <ChatContainer/>
+                    <ProfileContainer/>
                 </div>
         </Router>
     );

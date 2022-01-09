@@ -1,0 +1,30 @@
+.profile {
+    width: 55px;
+    border-left: 1px solid #0000001f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.arrow {
+    position: relative;
+}
+.first {
+    height: 2px;
+    width: 20px;
+    background-color: #000;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: -8px;
+    top: -7px;
+}
+.second {
+    height: 2px;
+    width: 20px;
+    background-color: #000;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -8px;
+    top: 7px;
+}

@@ -24,3 +24,7 @@
 img {
     cursor: pointer;
 }
+hr{
+    margin: 0;
+    padding: 0;
+}

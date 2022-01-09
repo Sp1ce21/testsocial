@@ -1,12 +1,11 @@
-import { NavLink } from 'react-router-dom'
 import s from '../components/FriendsMenu/NomadList/Friends/Friends.module.css'
-const ProfileCreator = ({isOnline = false, image, fullName, link}) => {
+const ProfileCreator = ({isOnline = false, image, fullName}) => {
     return (
-        <NavLink className={s.profile} to={link}>
+        <div className={s.profile} onClick={()=>{}}>
             {isOnline ? <span className={s.online}></span> : <span className={s.offline}></span>}
             <img src={image} alt="image" className={s.image}/>
             <div className={s.text}>{fullName}</div>
-        </NavLink>
+        </div>
     )
 }
 export default ProfileCreator
