@@ -7,10 +7,10 @@ function CreateChatProfile(props) {
 
     return (
         <div className={`${s.row} ${s.block}`}>
-            <img src={props.friends.image} alt="image" />
+            <img src={props.friends.image} alt="image" onClick={()=>{props.setCurrentFriend(props.friends.id)}}/>
             <div>
                 <div className={s.row}>
-                    <div className={s.name}>{props.friends.fullName}</div>
+                    <div className={s.name} onClick={()=>{props.setCurrentFriend(props.friends.id)}}>{props.friends.fullName}</div>
                     <div className={s.time}>{props.time}</div>
                 </div>
                 <div className={s.message}>
