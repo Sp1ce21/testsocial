@@ -1,8 +1,6 @@
 import { NavLink } from 'react-router-dom';
-import { propTypes } from 'redux-form';
 import s from '../components/FriendsMenu/NomadList/Channels/Channels.module.css';
-const NavLinkCreator = ({adress, text, setCurrentLink, ...props}) => {
-// console.log(window.location.pathname);
+const NavLinkCreator = ({adress, text, setCurrentLink}) => {
     function callLink(){
         setCurrentLink(adress);
     }

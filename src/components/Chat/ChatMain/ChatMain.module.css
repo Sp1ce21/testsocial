@@ -1,7 +1,9 @@
 .main {
     padding: 20px;
-    max-height: 75vh;
+    max-height: 79vh;
     overflow-y: scroll;
+
+    flex: 1 0 auto;
 }
 .row {
     display: flex;
@@ -62,6 +64,10 @@
     font-size: 13px;
     line-height: 18px;
     color: #3577ef;
+    cursor: pointer;
+}
+.span:hover {
+    text-decoration: underline;
 }
 .container {
     position: relative;

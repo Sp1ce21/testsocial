@@ -11,6 +11,8 @@ import img10 from '../assets/images/FriendsMenu/img10.png'
 import img11 from '../assets/images/FriendsMenu/img11.png'
 
 const SWITCH_ONLINE = 'SWITCH_ONLINE';
+const SET_CURRENT_FRIEND = 'SET_CURRENT_FRIEND';
+const SWITCH_PROFILE = 'SWITCH_PROFILE';
 
 let initialState = {
     friends: [
@@ -33,6 +35,8 @@ let initialState = {
         {id: 16,  isOnline: false, image: img10, fullName: 'Nala Hester'},
         {id: 17,  isOnline: false, image: img11, fullName: 'Ramon Bateman'},
     ],
+    currentFriend: null,
+    isProfile: false,
 }
 
 const FriendsReducer = (state = initialState, action) => {
@@ -43,10 +47,25 @@ const FriendsReducer = (state = initialState, action) => {
                 ...state.friends[action.id].isOnline = action.trueOrFalse
             }
         }
+        case SET_CURRENT_FRIEND: {
+            return {
+                ...state,
+                currentFriend: action.id,
+                isProfile: true,
+            }
+        }
+        case SWITCH_PROFILE: {
+            return {
+                ...state,
+                isProfile: !state.isProfile,
+            }
+        }
         default: return state;
     }
 }
 
 export const switchOnline = (id, trueOrFalse) => ({ type: SWITCH_ONLINE, id, trueOrFalse })
+export const setCurrentFriend = (id) => ({ type: SET_CURRENT_FRIEND, id })
+export const setSwitchProfile = () => ({ type: SWITCH_PROFILE })
 
 export default FriendsReducer;

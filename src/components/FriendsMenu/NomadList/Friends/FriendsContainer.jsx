@@ -1,9 +1,9 @@
 import Friends from "./Friends";
 import { connect } from "react-redux";
-import {switchOnline} from '../../../../redux/friends-reducer'
+import {switchOnline, setCurrentFriend} from '../../../../redux/friends-reducer'
 function FriendsContainer(props) {
     return (
-        <Friends friends={props.friends}/>
+        <Friends friends={props.friends} setCurrentFriend={props.setCurrentFriend}/>
     );
 }
 
@@ -11,4 +11,4 @@ const mapStateToProps = (state) => ({
     friends: state.friends.friends,
 })
 
-export default connect(mapStateToProps, {switchOnline} )(FriendsContainer);
+export default connect(mapStateToProps, {switchOnline, setCurrentFriend} )(FriendsContainer);

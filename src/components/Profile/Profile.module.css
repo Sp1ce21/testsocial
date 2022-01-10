@@ -1,4 +1,7 @@
 .profile {
+    display: flex;
+}
+.switch {
     width: 55px;
     border-left: 1px solid #0000001f;
     display: flex;
@@ -13,18 +16,162 @@
 .first {
     height: 2px;
     width: 20px;
-    background-color: #000;
+    background-color: #a4a4a4;
     transform: rotate(-45deg);
     position: absolute;
     right: -8px;
     top: -7px;
+    transition: 0.4s;
 }
 .second {
     height: 2px;
     width: 20px;
-    background-color: #000;
+    background-color: #a4a4a4;
     transform: rotate(45deg);
     position: absolute;
     right: -8px;
     top: 7px;
+    transition: 0.4s;
+}
+.animationFirst {
+    height: 2px;
+    width: 20px;
+    background-color: #a4a4a4;
+    position: absolute;
+    right: -8px;
+    top: -7px;
+    transform: rotate(-136deg);
+    transition: 0.4s;
+}
+.animationSecond {
+    height: 2px;
+    width: 20px;
+    background-color: #a4a4a4;
+    position: absolute;
+    right: -8px;
+    top: 7px;
+    transform: rotate(136deg);
+    transition: 0.3s;
+}
+
+.profileBlock {
+    width: 201px;
+    max-height: 100vh;
+    background: #0000002a;
+    position: relative;
+    left: 0;
+    transition: 0.3s;
+}
+.displayNone {
+    width: 0;
+    transition: 0.4s;
+    position: relative;
+    left: 201px;
+}
+.image {
+    width: 100%;
+    height: auto;
+}
+.container {
+    padding: 20px;
+}
+.row {
+    display: flex;
+    align-items: center;
+}
+.offline {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #a3a2a2;
+}
+.online {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #70cc16;
+}
+.name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-right: 6px;
+}
+.status {
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #5f6164;
+    margin-bottom: 20px;
+}
+.images{
+    margin-bottom: 18px;
+    display: flex;
+    column-gap: 6px;
+}
+.background{
+    width: 22px;
+    height: 22px;
+    background: #E8E8EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.message {
+    width: 134px;
+    height: 25px;
+
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 3px;
+
+    background: #3577ef;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+.message:hover {
+    background: #3576efc4;
+}
+.arrowContainer {
+    width: 26px;
+    height: 25px;
+    background: #3577ef;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.arrowContainer:hover {
+    background: #3576efc4;
+}
+.messageContainer {
+    margin-bottom: 14px;
+}
+.block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    margin-bottom: 12px;
+}
+.title {
+    font-size: 12px;
+    line-height: 14px;
+    color: #5f6164;
+}
+.value {
+    line-height: 17px;
+    color: #000000;
 }

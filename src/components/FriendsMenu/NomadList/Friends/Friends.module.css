@@ -3,6 +3,7 @@
     align-items: center;
     margin-bottom: 15px;
     text-decoration: none;
+    cursor: pointer;
 }
 .offline {
     width: 8px;

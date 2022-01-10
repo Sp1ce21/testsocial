@@ -1,6 +1,5 @@
 import ProfileCreator from '../../../../common/ProfileCreator';
 import s from './Friends.module.css';
-import img1 from '../../../../assets/images/FriendsMenu/img1.png'
 
 function Friends(props) {
     return (
@@ -11,7 +10,8 @@ function Friends(props) {
                 <div className={s.numbers}>{props.friends.length}</div>
             </div>
 
-            {props.friends.map( u => <ProfileCreator isOnline={u.isOnline} image={u.image} fullName={u.fullName} link={u.link}/>)}
+            {props.friends.map(u => <ProfileCreator id={u.id} isOnline={u.isOnline} image={u.image} fullName={u.fullName} link={u.link} 
+            setCurrentFriend={props.setCurrentFriend} />)}
 
         </div>
     );

@@ -6,10 +6,8 @@ import ChatMainContainer from './ChatMain/ChatMainContainer';
 function Chat(props) {
     return (
         <div className={s.chatPage}>
-            <div>
-                <ChatHeader channelsLink={props.channelsLink} />
-                <ChatMainContainer />
-            </div>
+            <ChatHeader channelsLink={props.channelsLink} />
+            <ChatMainContainer />
             <ChatFooter />
         </div>
     );

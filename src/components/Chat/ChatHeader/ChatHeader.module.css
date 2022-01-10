@@ -34,6 +34,19 @@
     margin-left: 23px;
     margin-right: 20px;
 }
+.relative{
+    position: relative;
+    cursor: pointer;
+}
+.circle{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #FD4948;
+    position: absolute;
+    top: -2px;
+    right: 16px;
+}
 .form {
     display: flex;
     justify-content: space-between;
